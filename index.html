@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>GlowHub para a Glow Park</title>
+<meta name="description" content="Proposta da Swot Technology para a Glow Park: o GlowHub, com Financeiro, Comercial e Marketing numa plataforma só, com protótipo navegável.">
+<meta name="theme-color" content="#0E1A3A">
+<link rel="icon" type="image/png" href="assets/img/glow-logo.png">
+<link rel="stylesheet" href="assets/css/site.css">
+<link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body>
+<a class="skip" href="#proto">Pular para o protótipo</a>
+
+<header class="topbar">
+  <a class="brand" href="#abertura" aria-label="Glow Park, voltar ao início">
+    <img src="assets/img/glow-logo-white.png" alt="Glow Park" width="69" height="34">
+    <span class="brand-by">proposta da Swot Technology</span>
+  </a>
+  <nav class="chapters" aria-label="Capítulos">
+    <ol>
+      <li><a href="#abertura" data-ch="abertura"><span class="ch-n">1</span>A linha da festa</a></li>
+      <li><a href="#por-dentro" data-ch="por-dentro"><span class="ch-n">2</span>Por dentro</a></li>
+      <li><a href="#retorno" data-ch="retorno"><span class="ch-n">3</span>O retorno</a></li>
+      <li><a href="#economia" data-ch="economia"><span class="ch-n">4</span>A economia</a></li>
+      <li><a href="#seguranca" data-ch="seguranca"><span class="ch-n">5</span>Segurança</a></li>
+      <li><a href="#como" data-ch="como"><span class="ch-n">6</span>Como fazemos</a></li>
+      <li><a href="#perguntas" data-ch="perguntas"><span class="ch-n">7</span>Perguntas</a></li>
+      <li><a href="#investimento" data-ch="investimento"><span class="ch-n">8</span>Investimento</a></li>
+    </ol>
+  </nav>
+  <button class="tb-btn" type="button" id="sxBtn" aria-pressed="false" title="Ocultar os valores (tecla S)">
+    <svg class="i-hide" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3l18 18"/><path d="M10.6 5.1A10.4 10.4 0 0 1 12 5c6 0 10 7 10 7a17.6 17.6 0 0 1-3.2 3.9M6.6 6.6C3.9 8.4 2 12 2 12s4 7 10 7a9.8 9.8 0 0 0 5.4-1.6"/><path d="M9.9 9.9a3 3 0 0 0 4.2 4.2"/></svg>
+    <svg class="i-show" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>
+    <span class="tb-t">Ocultar valores</span>
+  </button>
+  <button class="tb-btn" type="button" id="keysBtn" aria-haspopup="dialog">Atalhos</button>
+</header>
+
+<main id="stage">
+
+  <!-- 1. A linha da festa -->
+  <section class="chapter ch-hero" id="abertura" aria-labelledby="h-abertura">
+    <div class="wrap">
+      <div class="hero-head">
+        <h1 id="h-abertura" class="display">Do anúncio ao dinheiro no banco, numa linha só.</h1>
+        <div class="hero-side">
+          <p class="lead">Hoje, uma festa passa por cinco sistemas e nenhum guarda a história inteira. O GlowHub liga a campanha à conversa, a conversa à festa e a festa ao dinheiro que entrou no banco.</p>
+          <div class="toggle" role="radiogroup" aria-label="Ver a linha da festa">
+            <button type="button" role="radio" aria-checked="true" data-mode="hoje">Hoje</button>
+            <button type="button" role="radio" aria-checked="false" data-mode="glowhub">Com o GlowHub</button>
+          </div>
+        </div>
+      </div>
+      <div class="line-wrap" id="line" aria-describedby="lineHint"></div>
+      <div class="line-foot">
+        <div class="legend-mod" aria-label="Legenda">
+          <span><i style="background:var(--cyan)"></i>Marketing</span>
+          <span><i style="background:var(--magenta)"></i>Comercial</span>
+          <span><i style="background:var(--lime)"></i>Financeiro</span>
+          <span><i class="dot" style="background:var(--ember)"></i>onde a festa se perde hoje</span>
+        </div>
+        <p class="hint" id="lineHint">Toque numa parada ou num ponto laranja para ver onde a festa se perde hoje.</p>
+      </div>
+      <div class="facts" id="facts"></div>
+      <p class="facts-src">Números do diagnóstico das festas e dos mapas de processo do financeiro, informados pela gestão da Glow Park. Serão confirmados na linha de base da etapa zero.</p>
+
+      <div class="weigh">
+        <h2 class="sub-h">Onde cada ponto pesa</h2>
+        <p class="sub-p">O diagnóstico das festas levantou nove pontos de atenção. Cada um pesa em pelo menos um de quatro eixos: receita, custo, controle e risco.</p>
+        <div class="weigh-grid">
+          <div class="weigh-main">
+            <div id="weighTable"></div>
+            <div class="line-foot weigh-foot">
+              <p class="hint">Leitura qualitativa, a ser confirmada na linha de base da etapa zero.</p>
+              <p class="hint">Toque numa linha para ver o que observamos e o que o GlowHub faz.</p>
+            </div>
+          </div>
+          <div class="weigh-side">
+            <div class="weigh-stat" id="weighStat"></div>
+            <div class="panel-n fair">
+              <h3>Uma leitura justa</h3>
+              <p>Nenhum desses pontos é incomum. Redes que crescem rápido acumulam ferramentas, cada uma resolvendo o problema do momento. O passo seguinte natural é transformar soluções isoladas em uma operação única, e é isso que o GlowHub propõe.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. Por dentro -->
+  <section class="chapter" id="por-dentro" aria-labelledby="h-por-dentro">
+    <div class="wrap">
+      <div class="ch-head">
+        <h2 id="h-por-dentro" class="title">O GlowHub, por dentro.</h2>
+        <p class="lead">Um protótipo navegável, com dados de demonstração. Clique nas conversas, na agenda e nos painéis, ou siga uma visita guiada.</p>
+      </div>
+      <div class="tour-launch" id="tourLaunch" role="group" aria-label="Visitas guiadas"></div>
+    </div>
+    <div class="story" id="story"></div>
+    <div class="proto-stage" id="proto">
+      <div class="app-win" id="app" role="region" aria-label="Protótipo do GlowHub"></div>
+      <div class="phone-col">
+        <div class="phone" id="phone" role="region" aria-label="Celular"></div>
+      </div>
+    </div>
+    <p class="proto-note">Dados de demonstração: nomes de famílias, vendedores e valores das telas são fictícios. Unidades, marca e personagens são da Glow Park.</p>
+  </section>
+
+  <!-- 3. O retorno -->
+  <section class="chapter" id="retorno" aria-labelledby="h-retorno">
+    <div class="wrap">
+      <div class="ch-head">
+        <h2 id="h-retorno" class="title">Não é gasto, é troca.</h2>
+        <p class="lead" id="retornoLead"></p>
+      </div>
+      <div class="roi-grid" id="roi"></div>
+      <figure class="quote" id="quote"></figure>
+      <h3 class="sub-h">O que a conta ainda não inclui</h3>
+      <div class="not-yet" id="notYet"></div>
+    </div>
+  </section>
+
+  <!-- 4. A economia -->
+  <section class="chapter" id="economia" aria-labelledby="h-economia">
+    <div class="wrap">
+      <div class="ch-head">
+        <h2 id="h-economia" class="title">Menos da metade do preço, um quinto do prazo.</h2>
+        <p class="lead">A Swot pesquisou em 07/10/2026 o que o mercado cobra pelo mesmo resultado, por três caminhos: contratar uma software house, comprar ferramentas prontas ou seguir como está.</p>
+      </div>
+      <div id="saveTable"></div>
+      <div class="eco-charts" id="ecoCharts"></div>
+      <div class="why-fast" id="whyFast"></div>
+      <div class="more" id="ecoMore"></div>
+    </div>
+  </section>
+
+  <!-- 5. Segurança -->
+  <section class="chapter" id="seguranca" aria-labelledby="h-seguranca">
+    <div class="wrap sec-grid">
+      <div>
+        <div class="ch-head">
+          <h2 id="h-seguranca" class="title">Os dados da Glow Park protegidos em cada camada.</h2>
+          <p class="lead">O GlowHub guarda o que a Glow Park tem de mais sensível: o dinheiro que entra e sai, as conversas com as famílias e dados de crianças. Para a Swot, segurança está no desenho, no código e na operação, e tudo o que está aqui já está no código, com teste automatizado.</p>
+        </div>
+        <div class="sec-facts" id="secFacts"></div>
+        <p class="note" id="secNote"></p>
+      </div>
+      <div>
+        <div class="layers" id="layers"></div>
+        <div class="promise" id="promise"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Como fazemos -->
+  <section class="chapter" id="como" aria-labelledby="h-como">
+    <div class="wrap">
+      <div class="ch-head">
+        <h2 id="h-como" class="title">12 semanas, porque a base já roda.</h2>
+        <p class="lead">Quem já conhece a operação da Glow Park e já tem os três módulos em demonstração. As 12 semanas são para ligar os sistemas reais, virar o WhatsApp, rodar o piloto da IA e treinar as unidades.</p>
+      </div>
+      <div class="why" id="why"></div>
+      <div class="team" id="team"></div>
+      <h3 class="sub-h">O cronograma</h3>
+      <p class="sub-p">O Financeiro e o WhatsApp oficial entram em produção na semana 8. As frentes correm em paralelo; o caminho crítico são os acessos aos fornecedores e à Meta, por isso os pedidos saem na primeira semana.</p>
+      <div class="gantt-wrap" id="gantt"></div>
+      <p class="g-legend"><span><b>◆</b> entrada em produção</span><span><b>P1, P2 e P3</b> portões de decisão</span><span>barra clara: frente de apoio</span></p>
+      <div class="gates" id="gates"></div>
+      <p class="note">Um ritual semanal de 30 minutos com o ponto focal de cada área mostra o andamento por requisito e os riscos da semana. A homologação roda em ambiente próprio, com acesso para quem a Glow Park indicar.</p>
+      <h3 class="sub-h">O que cada lado garante</h3>
+      <div class="team" id="deals"></div>
+    </div>
+  </section>
+
+  <!-- 7. Perguntas -->
+  <section class="chapter" id="perguntas" aria-labelledby="h-perguntas">
+    <div class="wrap">
+      <div class="ch-head">
+        <h2 id="h-perguntas" class="title">Perguntas da diretoria.</h2>
+        <p class="lead">As dúvidas mais comuns, respondidas com números.</p>
+      </div>
+      <div class="faq" id="faq"></div>
+    </div>
+  </section>
+
+  <!-- 8. Investimento e próximo passo -->
+  <section class="chapter ch-close" id="investimento" aria-labelledby="h-investimento">
+    <div class="wrap">
+      <div class="print-only print-head">
+        <img src="assets/img/glow-logo.png" alt="Glow Park">
+        <div><b>Proposta da Swot Technology para a Glow Park</b><span>GlowHub: Financeiro, Comercial e Marketing. Emitida em 07/10/2026, válida até 06/11/2026.</span></div>
+      </div>
+      <div class="ch-head">
+        <h2 id="h-investimento" class="title">O que a Glow Park investe.</h2>
+        <p class="lead" id="invLead"></p>
+        <p class="offer-ref" id="offerRef"></p>
+      </div>
+      <div class="offer-kpis" id="offerKpis"></div>
+      <div class="offer" id="offer"></div>
+      <div class="terms" id="terms"></div>
+      <div class="offer-actions">
+        <button class="btn btn-lime" type="button" id="printBtn">Salvar a proposta em PDF</button>
+        <button class="btn" type="button" data-tour-open="familia">Rever a visita da família</button>
+      </div>
+      <div class="next-grid">
+        <div>
+          <h3 class="title">Vamos acender a primeira luz?</h3>
+          <ol class="next-steps" id="nextSteps"></ol>
+        </div>
+        <figure class="close-art" aria-hidden="true"><img src="assets/img/glow-will.png" alt="" width="250" height="330"></figure>
+      </div>
+      <footer class="stage-foot">
+        <p>Proposta da Swot Technology para a Glow Park, emitida em 07/10/2026 e válida por 30 dias. O protótipo usa dados de demonstração: nomes de famílias, vendedores e valores das telas são fictícios. Os números da Glow Park vêm do diagnóstico das festas, dos mapas de processo e do gasto com sistemas informado em outubro de 2026. Logo, cores e personagens pertencem à Glow Park.</p>
+      </footer>
+    </div>
+  </section>
+</main>
+
+<div class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="drawerTitle" hidden>
+  <div class="drawer-bg" data-close></div>
+  <div class="drawer-card" tabindex="-1">
+    <button class="drawer-x" type="button" data-close aria-label="Fechar">×</button>
+    <div id="drawerBody"></div>
+  </div>
+</div>
+
+<div class="modal" id="keys" role="dialog" aria-modal="true" aria-labelledby="keysTitle" hidden>
+  <div class="modal-bg" data-close></div>
+  <div class="modal-card" tabindex="-1">
+    <button class="modal-x" type="button" data-close aria-label="Fechar">×</button>
+    <h3 id="keysTitle">Atalhos para apresentar</h3>
+    <dl class="keys">
+      <dt><kbd>→</kbd> ou <kbd>Page Down</kbd></dt><dd>próximo capítulo; na visita guiada, próximo passo</dd>
+      <dt><kbd>←</kbd> ou <kbd>Page Up</kbd></dt><dd>capítulo ou passo anterior</dd>
+      <dt><kbd>1</kbd> a <kbd>8</kbd></dt><dd>ir direto a um capítulo</dd>
+      <dt><kbd>V</kbd></dt><dd>alternar hoje e com o GlowHub, na linha da festa</dd>
+      <dt><kbd>S</kbd></dt><dd>ocultar ou revelar os valores da proposta</dd>
+      <dt><kbd>Esc</kbd></dt><dd>fechar a gaveta, a janela ou a visita guiada</dd>
+    </dl>
+  </div>
+</div>
+
+<div class="tour-scrim" id="tourScrim" hidden><div class="tour-hole" id="tourHole"></div></div>
+<div class="tour-bubble" id="tourBubble" role="dialog" aria-labelledby="tourTitle" aria-live="polite" hidden></div>
+<div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+<script src="assets/js/util.js"></script>
+<script src="assets/js/numeros.js"></script>
+<script src="assets/js/data.js"></script>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/comercial.js"></script>
+<script src="assets/js/marketing.js"></script>
+<script src="assets/js/financeiro.js"></script>
+<script src="assets/js/phone.js"></script>
+<script src="assets/js/tours.js"></script>
+<script src="assets/js/site.js"></script>
+</body>
+</html>
